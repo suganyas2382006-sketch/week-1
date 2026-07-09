@@ -1,0 +1,19 @@
+# Run this once if you need a quick dummy dataset to test with
+sample_data = pd.DataFrame(
+    {
+        "area": [1000, 1200, 1500, 1800, 2000, 2200, 2500, 2800, 3000, 3200],
+        "price": [
+            200000,
+            230000,
+            280000,
+            310000,
+            350000,
+            390000,
+            420000,
+            470000,
+            500000,
+            530000,
+        ],
+    }
+)
+sample_data.to_csv("house_prices.csv", index=False)
